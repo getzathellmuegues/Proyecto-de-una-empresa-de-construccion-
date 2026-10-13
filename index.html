@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto académico de gestión para una empresa de construcción.">
+  <title>Constructora Horizonte | Proyecto SENA</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Inicio">
+      <span class="brand-mark">CH</span>
+      <span>Constructora <strong>Horizonte</strong></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#obras">Obras</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">PROYECTO ACADÉMICO · SENA</p>
+        <h1>Construimos ideas.<br><span>Hacemos futuro.</span></h1>
+        <p class="hero-text">Una propuesta de software para organizar clientes, obras, materiales, empleados y pedidos de una empresa de construcción.</p>
+        <a class="button" href="#obras">Ver proyectos</a>
+      </div>
+      <div class="hero-card" aria-label="Resumen del proyecto">
+        <div class="helmet">⌂</div>
+        <p class="hero-card-label">GESTIÓN DE CONSTRUCCIÓN</p>
+        <h2>Todo el proyecto, mejor organizado.</h2>
+        <div class="mini-stats">
+          <div><strong>01</strong><span>Clientes</span></div>
+          <div><strong>02</strong><span>Obras</span></div>
+          <div><strong>03</strong><span>Materiales</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">QUÉ HACEMOS</p>
+        <h2>Servicios principales</h2>
+        <p>La empresa ofrece soluciones para proyectos de construcción y remodelación.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-icon">⌂</span><h3>Construcción de obras</h3><p>Planeación y seguimiento de proyectos de construcción.</p></article>
+        <article class="service-card"><span class="service-icon">▦</span><h3>Remodelaciones</h3><p>Mejoras y adecuaciones para espacios residenciales y comerciales.</p></article>
+        <article class="service-card"><span class="service-icon">✓</span><h3>Control de materiales</h3><p>Organización de materiales y recursos necesarios para cada obra.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="obras">
+      <div class="section-heading">
+        <p class="eyebrow">PORTAFOLIO</p>
+        <h2>Obras de ejemplo</h2>
+        <p>Datos ficticios para demostrar la estructura inicial del proyecto.</p>
+      </div>
+      <div class="project-grid" id="project-list">
+        <article class="project-card"><div class="project-visual visual-one"><span>OBRA 01</span></div><div class="project-info"><span class="status">En planeación</span><h3>Vivienda familiar</h3><p>Construcción residencial · Urumita</p></div></article>
+        <article class="project-card"><div class="project-visual visual-two"><span>OBRA 02</span></div><div class="project-info"><span class="status status-progress">En ejecución</span><h3>Local comercial</h3><p>Obra comercial · La Guajira</p></div></article>
+      </div>
+
+      <div class="add-project-panel">
+        <div><h3>Agregar una obra de ejemplo</h3><p>Este formulario solo agrega datos en la página actual; no los guarda en una base de datos.</p></div>
+        <form id="project-form">
+          <label for="project-name">Nombre de la obra</label>
+          <input id="project-name" name="project-name" type="text" placeholder="Ej. Ampliación de vivienda" required maxlength="60">
+          <label for="project-location">Ubicación</label>
+          <input id="project-location" name="project-location" type="text" placeholder="Ej. Villanueva, La Guajira" required maxlength="60">
+          <button class="button" type="submit">Agregar obra</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div><p class="eyebrow">CONTACTO</p><h2>¿Tienes un proyecto en mente?</h2><p>Esta sección es demostrativa y se puede conectar a un sistema de contacto en una futura versión.</p></div>
+      <a class="button button-light" href="mailto:contacto@example.com">Escribir un correo de ejemplo</a>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Constructora Horizonte</strong> · Proyecto académico de Análisis y Desarrollo de Software.</p>
+    <p>Versión inicial para práctica de Git y GitHub.</p>
+  </footer>
+</body>
+</html>
